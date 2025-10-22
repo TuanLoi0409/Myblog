@@ -1,0 +1,58 @@
+name: Deploy Hugo Site to GitHub Pages
+
+on:
+  # Chạy mỗi khi bạn push code lên nhánh 'main'
+  push:
+    branches: [ main ]
+  # Cho phép bạn chạy workflow này thủ công từ tab Actions
+  workflow_dispatch:
+
+# Quyền hạn cho workflow
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Lấy cả code của theme (hugoplate)
+
+      - name: Setup Node.js (vì có Tailwind CSS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Hoặc 20
+          cache: 'npm'
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Build Hugo site
+        run: npm run build # Lệnh này sẽ chạy 'hugo' và build Tailwind CSS
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public # Thư mục mà Hugo build ra
+
+  # Bước Deploy
+  deploy:
+    needs: build # Phải chạy sau khi 'build' thành công
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # Xuất ra URL
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
