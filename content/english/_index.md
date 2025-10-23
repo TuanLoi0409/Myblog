@@ -8,35 +8,34 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+  - title: "DỰ ÁN MÔN HỌC"
+    image: "/images/DecisionTree.png"
+    content: "Phân Loại Mã Độc"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Xây dựng machine learning để phân loại mã độc"
+      - "Thu thập Dataset"
+      - "Xây dựng hệ thống phân loại"
+      - "Tạo dựng các lần test mã độc cho hệ thống"
+      - "Xây dựng web để thực thi"
+      - "Đánh giá và kết luận dự án"
 
 
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+  - title: "Kinh nghiệm"
+    image: "/images/hutech.jpg"
+    content: "Thực tập sinh Phát triển hệ thống phòng chống file mã độc 06/2025 – 09/2025,Hutech Campus Saigon Co., Ltd"
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Xây dựng và tùy chỉnh các cơ chế/giải pháp để phát hiện, phân tích và ngăn chặn mã độc."
+      - "Tích hợp các nguồn dữ liệu bảo mật (Endpoint, Network, IDS/IPS) với hệ thống phân tích trung tâm (SIEM) để đồng bộ hóa cảnh báo theo thời gian thực."
+      - "Hợp tác kiểm thử khả năng phòng thủ của hệ thống (mô phỏng tấn công), xây dựng tài liệu quy trình ứng phó sự cố và hỗ trợ đội ngũ vận hành."
 
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Kỹ Năng Mềm"
+    image: "/images/Team.jpg"
+    content: ""
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Làm việc nhóm & Giao tiếp: Có khả năng hợp tác hiệu quả trong các nhóm đa dạng và truyền đạt ý tưởng rõ ràng."
+      - "Tư duy Logic & Sáng tạo: Kỹ năng giải quyết vấn đề tốt với sự cân bằng giữa phương pháp phân tích và đổi mới."
+      - "Chủ động Lắng nghe & Học hỏi: Cởi mở, tiếp thu phản hồi và cam kết liên tục cải thiện bản thân."
     button:
       enable: false
       label: ""
