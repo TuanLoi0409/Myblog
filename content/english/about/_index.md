@@ -1,8 +1,8 @@
 ---
-title: "Hey, I am John Doe!"
+title: "Xin chào ! Tôi là Tuấn Lợi"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/loi1.jpg"
 draft: false
 ---
 

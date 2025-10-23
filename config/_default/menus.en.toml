@@ -2,12 +2,12 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "Trang Chủ"
 url = "/"
 weight = 1
 
 [[main]]
-name = "Giới thiệu"
+name = "Giới Thiệu"
 url = "/about"
 weight = 2
 
@@ -27,7 +27,7 @@ url = "/blog"
 
 [[main]]
 parent = "Pages"
-name = "Contact"
+name = "Liên Hệ"
 url = "/contact"
 
 [[main]]
